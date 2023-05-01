@@ -49,7 +49,7 @@ function App() {
       <div className="container my-3">
           <Routes>
               <Route path="/about" element = {<About Mode = {Mode} />} />
-//               <Route path='/' element = {<TextForm heading = "Fastest online tool to manipulate your text for FREE!" Mode = {Mode} showAlert = {showAlert} />} />
+              <Route path='/' element = {<TextForm heading = "Fastest online tool to manipulate your text for FREE!" Mode = {Mode} showAlert = {showAlert} />} />
           </Routes>
        </div>
        </Router>
