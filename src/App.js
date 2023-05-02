@@ -10,7 +10,7 @@ import About from './components/About';
 
  
 function App() {
-
+ 
   const [Mode, setMode] = useState('light');
   const [Text, setText] = useState('Enable DarkMode');
   const [alert, setAlert] = useState(null);
