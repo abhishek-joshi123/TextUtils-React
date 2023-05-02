@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 
 import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
@@ -50,6 +50,7 @@ function App() {
           <Routes>
               <Route path="/about" element = {<About Mode = {Mode} />} />
               <Route path='/' element = {<TextForm heading = "Fastest online tool to manipulate your text for FREE!" Mode = {Mode} showAlert = {showAlert} />} />
+              <Route path="*" element = {<Navigate to= "/" />} />
           </Routes>
        </div>
        </Router>
